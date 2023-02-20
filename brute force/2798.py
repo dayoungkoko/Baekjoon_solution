@@ -7,7 +7,7 @@ def blackjack(num, limit) :
         for j in range(i+1, num-1) :
             for k in range(j+1, num) :
                 if lst[i]+lst[j]+lst[k] <= limit :
-                    result.append(lst[i] + lst[j] + lst[k])
+                    result.append( lst[i] + lst[j] + lst[k] )
     return max(result)
         
 answer = blackjack(n, m)
